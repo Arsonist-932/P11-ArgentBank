@@ -7,7 +7,7 @@ import Login from "./pages/Login";
 import UserProfile from "./pages/UserProfile";
 
 import Error404 from "./pages/Error404";
-import PrivateRoutes from "./utils/PrivataRoutes/PrivataRoutes";
+import PrivateRoutes from "./utils/PrivateRoutes/PrivateRoutes";
 
 function App() {
   return (

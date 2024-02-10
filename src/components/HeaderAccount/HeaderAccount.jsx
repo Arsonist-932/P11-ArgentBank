@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./HeaderAccount.scss";
 import { useSelector } from "react-redux";
-import EditName from "../editName/EditName";
+import EditName from "../EditName/EditName";
 
 function HeaderAccount() {
   const [isEditing, setIsEditing] = useState(false);
