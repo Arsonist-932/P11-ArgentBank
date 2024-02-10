@@ -1,0 +1,32 @@
+.formUpdate {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+      border-color: #00bc77;
+      background-color: #00bc77;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      height: 50px;
+      width: 100%;
+    }
+  }
+  label {
+    color: #fff;
+  }
+
+  input {
+    margin-left: 15px;
+    height: 30px;
+    font-size: 15px;
+    width: 50%;
+    font-weight: 700;
+  }
+}
