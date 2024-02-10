@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
+import Banner from "../components/Banner/Banner";
 import Footer from "../components/Footer/Footer";
 
 function Home() {
@@ -8,7 +9,11 @@ function Home() {
         <Navbar />
       </header>
 
-      <main></main>
+      <main>
+        <div className="hero">
+          <Banner />
+        </div>
+      </main>
 
       <footer className="footer">
         <Footer />
