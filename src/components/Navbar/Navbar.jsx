@@ -2,8 +2,15 @@ import { NavLink } from "react-router-dom";
 
 import Logo from "../../assets/img/argentBankLogo.png";
 import "./Navbar.scss";
+import ConnectNavbar from "../ConnectNavbar/ConnectNavbar";
 
 function Navbar() {
+  // Authentificate Management
+  const token =
+    localStorage.getItem("token") || sessionStorage.getItem("token");
+
+  const isAuthenticated = !!token;
+
   return (
     <>
       <nav className="main-nav">
@@ -16,12 +23,16 @@ function Navbar() {
           <h1 className="sr-only">Argent Bank</h1>
         </NavLink>
 
-        <div>
-          <NavLink to="/login" className="main-nav-item">
-            <i className="fa fa-user-circle"></i>
-            Sign In
-          </NavLink>
-        </div>
+        {isAuthenticated ? (
+          <ConnectNavbar />
+        ) : (
+          <div>
+            <NavLink to="/login" className="main-nav-item">
+              <i className="fa fa-user-circle"></i>
+              Sign In
+            </NavLink>
+          </div>
+        )}
       </nav>
     </>
   );
