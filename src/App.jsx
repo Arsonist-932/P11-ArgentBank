@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // IMPORT PAGES
-import "./style/App.css";
+import "./style/App.scss";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import UserProfile from "./pages/UserProfile";
-import PrivateRoutes from "./components/PrivateRoutes/PrivateRoutes";
+
 import Error404 from "./pages/Error404";
+import PrivateRoutes from "./utils/PrivataRoutes/PrivataRoutes";
 
 function App() {
   return (
