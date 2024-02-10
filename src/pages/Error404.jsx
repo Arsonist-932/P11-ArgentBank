@@ -1,7 +1,18 @@
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+
 function Error404() {
   return (
     <>
-      <div></div>
+      <header>
+        <Navbar />
+      </header>
+
+      <main></main>
+
+      <footer className="footer">
+        <Footer />
+      </footer>
     </>
   );
 }
